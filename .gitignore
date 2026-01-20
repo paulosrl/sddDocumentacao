@@ -1,0 +1,8 @@
+# Tailwind CSS binary (large file)
+tailwindcss
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store

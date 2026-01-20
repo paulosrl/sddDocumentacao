@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SDD - Structured Driven Development: Pare de codar por vibração, comece a projetar.">
+  <title>SDD - Structured Driven Development</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-dark-900/95 backdrop-blur-sm border-b border-dark-700 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <span class="text-xl font-bold text-neon-cyan">SDD</span>
+        <div class="flex gap-4 sm:gap-6 text-sm">
+          <a href="#problema" class="text-gray-400 hover:text-white transition-colors">Problema</a>
+          <a href="#solucao" class="text-gray-400 hover:text-white transition-colors">Solução</a>
+          <a href="#estudo-caso" class="text-gray-400 hover:text-white transition-colors">Estudo de Caso</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-16">
+      <div class="section-container text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          <span class="text-white">Pare de Codar por Vibração.</span><br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Comece a Projetar.</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">
+          <strong class="text-neon-cyan">SDD</strong> (Structured Driven Development) é a metodologia que transforma prompts caóticos em código previsível e manutenível.
+        </p>
+        <a href="#estudo-caso" class="btn-primary inline-block">
+          Ver Esta Página Como Exemplo
+        </a>
+      </div>
+    </section>
+
+    <!-- O Problema: Vibe Coding -->
+    <section id="problema" class="bg-dark-800">
+      <div class="section-container">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+          O Problema: <span class="text-red-400">Vibe Coding</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-dark-900 rounded-xl p-6 border border-red-500/30">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">&#x1F3B2;</span>
+              <h3 class="text-xl font-semibold text-red-400">Codificação por Tentativa e Erro</h3>
+            </div>
+            <p class="text-gray-400">
+              Pedir código à IA sem especificações claras resulta em soluções aleatórias que raramente atendem às necessidades reais.
+            </p>
+          </div>
+
+          <div class="bg-dark-900 rounded-xl p-6 border border-red-500/30">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">&#x1F504;</span>
+              <h3 class="text-xl font-semibold text-red-400">Loops Infinitos de "Fix This"</h3>
+            </div>
+            <p class="text-gray-400">
+              Sem contexto estruturado, cada correção gera novos bugs. O desenvolvedor fica preso em ciclos de "conserta isso" intermináveis.
+            </p>
+          </div>
+
+          <div class="bg-dark-900 rounded-xl p-6 border border-red-500/30">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">&#x1F47B;</span>
+              <h3 class="text-xl font-semibold text-red-400">Alucinações de Bibliotecas</h3>
+            </div>
+            <p class="text-gray-400">
+              A IA inventa funções e pacotes que não existem, gerando código impossível de executar sem pesquisa manual extensiva.
+            </p>
+          </div>
+
+          <div class="bg-dark-900 rounded-xl p-6 border border-red-500/30">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">&#x1F9E0;</span>
+              <h3 class="text-xl font-semibold text-red-400">Context Rot (Degradação de Contexto)</h3>
+            </div>
+            <p class="text-gray-400">
+              Em conversas longas, a IA "esquece" decisões anteriores, introduzindo inconsistências e regressões no código.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A Solução: SDD -->
+    <section id="solucao">
+      <div class="section-container">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+          A Solução: <span class="text-neon-cyan">SDD</span>
+        </h2>
+
+        <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+          O SDD segue o fluxo <strong class="text-white">RPI</strong>: Research (Pesquisa), Plan (Plano), Implement (Implementação). Cada etapa gera artefatos que servem como contexto persistente.
+        </p>
+
+        <!-- Diagrama Visual -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0 mb-16">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-neon-blue to-neon-cyan flex items-center justify-center text-3xl font-bold text-white">1</div>
+            <span class="mt-3 font-semibold text-neon-blue">SPEC</span>
+            <span class="text-sm text-gray-500">PRD / Requisitos</span>
+          </div>
+
+          <!-- Arrow -->
+          <div class="hidden md:block text-4xl text-dark-700 px-4">&#x2192;</div>
+          <div class="md:hidden text-4xl text-dark-700 py-2">&#x2193;</div>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-neon-purple to-pink-500 flex items-center justify-center text-3xl font-bold text-white">2</div>
+            <span class="mt-3 font-semibold text-neon-purple">PLAN</span>
+            <span class="text-sm text-gray-500">Plano Detalhado</span>
+          </div>
+
+          <!-- Arrow -->
+          <div class="hidden md:block text-4xl text-dark-700 px-4">&#x2192;</div>
+          <div class="md:hidden text-4xl text-dark-700 py-2">&#x2193;</div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-green-500 to-emerald-400 flex items-center justify-center text-3xl font-bold text-white">3</div>
+            <span class="mt-3 font-semibold text-green-500">IMPLEMENT</span>
+            <span class="text-sm text-gray-500">Código + Verificação</span>
+          </div>
+        </div>
+
+        <!-- Benefícios -->
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">&#x1F4D0;</div>
+            <h3 class="text-lg font-semibold text-white mb-2">Previsibilidade</h3>
+            <p class="text-gray-400 text-sm">Cada fase tem critérios de sucesso claros. Sem surpresas.</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">&#x1F527;</div>
+            <h3 class="text-lg font-semibold text-white mb-2">Manutenibilidade</h3>
+            <p class="text-gray-400 text-sm">Documentação gerada junto com o código. Contexto preservado.</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">&#x1F4C8;</div>
+            <h3 class="text-lg font-semibold text-white mb-2">Escalabilidade</h3>
+            <p class="text-gray-400 text-sm">Projetos grandes divididos em fases incrementais e testáveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meta-Estudo de Caso -->
+    <section id="estudo-caso" class="bg-dark-800">
+      <div class="section-container">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">
+          <span class="text-neon-purple">Meta-Estudo de Caso</span>
+        </h2>
+        <p class="text-center text-gray-400 mb-8">
+          Esta própria página foi criada usando SDD. Veja os artefatos:
+        </p>
+
+        <!-- Tabs -->
+        <div class="max-w-4xl mx-auto">
+          <div class="flex border-b border-dark-700" role="tablist" aria-label="Artefatos do projeto">
+            <button
+              class="tab-button active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab-prd"
+              data-tab="prd">
+              &#x1F4CB; O PRD
+            </button>
+            <button
+              class="tab-button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-plano"
+              data-tab="plano">
+              &#x1F4DD; O Plano
+            </button>
+            <button
+              class="tab-button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-prompt"
+              data-tab="prompt">
+              &#x1F4AC; O Prompt
+            </button>
+          </div>
+
+          <!-- Tab Content: PRD -->
+          <div id="tab-prd" class="tab-content active" role="tabpanel">
+            <pre class="text-sm text-gray-300 overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed"><code><!-- PRD_CONTENT_PLACEHOLDER --></code></pre>
+          </div>
+
+          <!-- Tab Content: Plano -->
+          <div id="tab-plano" class="tab-content" role="tabpanel">
+            <pre class="text-sm text-gray-300 overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed"><code><!-- PLANO_CONTENT_PLACEHOLDER --></code></pre>
+          </div>
+
+          <!-- Tab Content: Prompt -->
+          <div id="tab-prompt" class="tab-content" role="tabpanel">
+            <pre class="text-sm text-gray-300 overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed"><code>/2.create_plan specs/prd.md
+
+Este comando invoca o skill de criação de plano, que:
+1. Lê o PRD completamente
+2. Analisa os requisitos
+3. Faz perguntas de clarificação
+4. Propõe estrutura de fases
+5. Gera plano detalhado com critérios de sucesso
+
+A interação foi iterativa: o humano aprovou cada etapa
+antes de prosseguir, garantindo alinhamento contínuo.</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-dark-700">
+    <div class="section-container text-center py-8">
+      <p class="text-gray-500 text-sm mb-4">
+        Criado com <span class="text-neon-cyan">SDD</span> usando Claude Code
+      </p>
+      <p class="text-gray-600 text-xs">
+        Referências:
+        <a href="https://claude.ai/claude-code" class="text-neon-blue hover:underline" target="_blank" rel="noopener">Claude Code</a> ·
+        <a href="https://www.anthropic.com" class="text-neon-blue hover:underline" target="_blank" rel="noopener">Anthropic</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Tab functionality
+    document.querySelectorAll('[data-tab]').forEach(button => {
+      button.addEventListener('click', () => {
+        // Update buttons
+        document.querySelectorAll('[data-tab]').forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+
+        // Update content
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        const tabId = 'tab-' + button.dataset.tab;
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
