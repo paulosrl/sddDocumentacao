@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build CSS with Tailwind
-./tailwindcss -i src/input.css -o dist/output.css --minify
+./tailwindcss -i src/input.css -o docs/output.css --minify
 
-# Copy HTML to dist
-cp src/index.html dist/index.html
+# Copy HTML to docs
+cp src/index.html docs/index.html
 
-echo "Build complete! Open dist/index.html in browser"
+echo "Build complete! Open docs/index.html in browser"
